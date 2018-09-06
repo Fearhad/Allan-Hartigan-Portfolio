@@ -1,118 +1,362 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Allan Hartigan - Full Stack Developer</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Materialize - Compiled and minified CSS-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome Icon - CSS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+    <!-- Custom Styles-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Allan Hartigan | Full Stack Developer</title>
 </head>
 
 <body>
-    <nav class="hide-on-small-only">
+    <!-- Navigation Menu-->
+    <nav class="hide-on-med-and-down">
         <ul class="side-nav fixed section table-of-contents">
             <li class="logo">
-                <a id="logo-container" aria-label="Go to the beginning of the page" href="#intro" class="brand-logo active">
-                    <h1>"Allan Hartigan"
-                        <span class="light">Full Stack Developer</span>
-                    </h1>
+                <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo teal-text">
+                    <div class="wrap">
+                        <div class="cube">
+                            <div class="front">
+                                Allan Hartigan
+                            </div>
+                            <div class="back">
+                                Full Stack Developer
+                            </div>
+                            <div class="top">
+                                FULL STACK
+                            </div>
+                            <div class="bottom">
+                                Developer
+                            </div>
+                            <div class="left">
+                                Allan Hartigan
+                            </div>
+                            <div class="right">
+                                Full Stack Developer
+                            </div>
+                        </div>
+                    </div>
                 </a>
             </li>
+
             <li class="bold">
-                <a aria-label="Go to the about section" href="#about" class="waves-effect waves-dark">
-                    <i class="mdi-social-person small">
-                        ::before
-                    </i>
+                <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark red-text">
+                    <i class="fas fa-user"></i>
                     <span>About</span>
                 </a>
             </li>
+
             <li class="bold">
-                <a aria-label="Go to the school projects section" href="#schoolProjects" class="waves-effect waves-dark indigo-text">
-                    <i class="mdi-atom small">
-                        ::before
-                    </i>
+                <a aria-label="Navigate to the School Projects section" href="#schoolProjects" class="waves-effect waves-dark orange-text">
+                    <i class="fas fa-chalkboard-teacher"></i>
                     <span>School Projects</span>
                 </a>
             </li>
             <li class="bold">
-                <a aria-label="Go to the personal projects section" href="#personalProjects" class="waves-effect waves-dark brown-text">
-                    <i class="mdi-av-web small">
-                        ::before
-                    </i>
-                    <span>School Projects</span>
+                <a aria-label="Navigate to the Personal Projects section" href="#personalProjects" class="waves-effect waves-dark yellow-text">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Personal Projects</span>
                 </a>
             </li>
             <li class="bold">
-                <a aria-label="Go to the skills section" href="#skills" class="waves-effect waves-dark brown-text">
-                    <i class="mdi-av-equalizer small">
-                        ::before
-                    </i>
+                <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark green-text">
+                    <i class="fas fa-toolbox"></i>
                     <span>Skills</span>
                 </a>
             </li>
             <li class="bold">
-                <a aria-label="Go to the contact section" href="#contact" class="waves-effect waves-dark brown-text">
-                    <i class="mdi-content-mail small">
-                        ::before
-                    </i>
+                <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark blue-text">
+                    <i class="fas fa-envelope"></i>
                     <span>Contact</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Open Allan's resume in a new tab" href="" target="_blank" class="waves-effect waves-dark purple-text text-darken-3">
+                    <i class="fas fa-file"></i>
+                    <span>Resume</span>
                 </a>
             </li>
         </ul>
     </nav>
-    <nav class="hide-on-large only trigger z-depth-1">
-            <a aria-label="Toggle visibility of the mobile navbar" href="#" data-activates="slide-out" class="button-collapse">
-                <i class="mdi-navigation-menu">
-                </i>
-            </a>
+    <nav class="hide-on-large-only trigger z-depth-1">
+        <a aria-label="Toggle visibility of the mobile navbar" href="#" data-target="slide-out" class="sidenav-trigger button-collapse">
+            <i class="fas fa-bars"></i>
+        </a>
+        <div class="name-title">
+            <a id="name" aria-label="Navigate to the beginning of the page" href="#main" class="teal-text">Allan
+                Hartigan</a>
+            <span class="brown-text light">Full Stack Developer</span>
+        </div>
     </nav>
-    <div class="name-title">
-        <a id="name" aria-label="Go to the beginning of the page" href="#main" class="teal-text">Allan Hartigan</a>
-        <span class="brown-text light">Full Stack Developer</span>
-    </div>
-    <nav class="hide-on-large only">
-            <ul id="slide-out" class="side-nav" style="width: 190px; left: -200px;">
-              <li class="bold">
-                  <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark teal-text">
-                      <i class="mdi-social-person small"></i>
-                      <span>About</span>
-                    </a>
-                </li>
-              <li class="bold">
-                  <a aria-label="Navigate to the School Projects section" href="#schoolProjects" class="waves-effect waves-dark cyan-text">
-                      <i class="mdi-action-trending-up small"></i>
-                      <span>School Projects</span>
-                    </a>
-                </li>
-              <li class="bold">
-                  <a aria-label="Navigate to the Personal Projects section" href="#personalProjects" class="waves-effect waves-dark indigo-text">
-                      <i class="mdi-av-web small"></i>
-                      <span>Personal Projects</span>
-                    </a>
-                </li>
-              <li class="bold">
-                  <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark purple-text">
-                      <i class="mdi-av-equalizer small"></i>
-                      <span>Skills</span>
-                    </a>
-                </li>
-              <li class="bold">
-                  <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark brown-text">
-                      <i class="mdi-content-mail small"></i>
-                      <span>Contact</span>
-                    </a>
-                </li>
-            </ul>
-          </nav>
+    <nav class="hide-on-large-only">
+        <ul id="slide-out" class="sidenav">
+            <li class="bold">
+                <a aria-label="Navigate to the About section" href="#about" class="waves-effect waves-dark red-text">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+            </li>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            <li class="bold">
+                <a aria-label="Navigate to the School Projects section" href="#schoolProjects" class="waves-effect waves-dark orange-text">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>School Projects</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Personal Projects section" href="#PersonalProjects" class="waves-effect waves-dark yellow-text">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Personal Projects</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Skills section" href="#skills" class="waves-effect waves-dark green-text">
+                    <i class="fas fa-toolbox"></i>
+                    <span>Skills</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Navigate to the Contact section" href="#contact" class="waves-effect waves-dark blue-text">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </li>
+            <li class="bold">
+                <a aria-label="Open Allan's resume in a new tab" href="" target="_blank" class="waves-effect waves-dark purple-text text-darken-3">
+                    <i class="fas fa-file"></i>
+                    <span>Resume</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- Main Content-->
+    <main class="frostbg">
+        <section id="intro" class="section scrollspy full-height">
+            <div class="overlay"></div>
+            <div class="container">
+                <h2>Develop a passion for <span class="frostbg">learning</span>. If you do, you will never cease to
+                    <span class="underline">grow</span>.
+            </div>
+        </section>
+        <section id="about" class="section scrollspy">
+            <h3 class="page-title burntAmberbg">About</h3>
+            <div class="container flow-text">
+                <blockquote class="bark">
+                    <h2>Hello! I am Allan Hartigan, Husband, Father of 6, and graduate of the University of Toronto
+                        Coding Bootcamp. Recently, I decided to fulfil a life-long desire to become a Full-Stack Web
+                        Developer. After 20 years in the customer service industry I felt now was a good time for a new
+                        adventure!</h2>
+                </blockquote>
+                <p>I’ve always sought out opportunities and challenges that are meaningful to me. Although my
+                    professional path has taken many twists and turns — from accounts payable clerk, to customer
+                    service representative, to computer hardware trainer, to becoming a team leader —
+                    I've never stopped engaging my passion of coding to help others and solve problems.</p>
+                <p>As a web developer, I enjoy constantly learning new languages, frameworks, and new ways to make it
+                    fun. That's why I’m excited to
+                    start this new journey with other passionate people like myself.</p>
+                <p><strong>Current Focus</strong>:&nbsp;<a class="bark" aria-label="Navigate to the University of Toronto Coding Bootcamp page"
+                        href="https://bootcamp.learn.utoronto.ca/">University of Toronto Coding Bootcamp</a></p>
+            </div>
+        </section>
+        <section id="schoolProjects" class="section scrollspy">
+            <h3 class="page-title burntAmberbg">School Projects</h3>
+            <div class="container">
+                <div class="row">
+                    <!-- Retro RPG Hangman -->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Screenshot of Retro RPG Hangman Game" src="assets/images/retro.PNG" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator nightfall hoverline">Retro RPG Hangman
+                                    <i class="fas fa-chevron-circle-down nightfall"></i>
+                                </span>
+                                <p>Hangman-like game to demonstrate array manipulation</p>
+                            </div>
+                            <div class="card-reveal"><span class="card-title nightfall">Accomplishments <i class="fas fa-window-close"></i></span>
+                                <ul>
+                                    <li><strong>HTML</strong></li>
+                                    <li><strong>CSS</strong></li>
+                                    <li><strong>Bootstrap</strong></li>
+                                    <li>Array and String Manipulation</li>
+                                    <li><strong>Javascript</strong></li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit Retro RPG Hangman Website" href="https://fearhad.github.io/Word-Guess-Game/"
+                                        target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light tooltipped">
+                                        <i class="fas fa-external-link-square-alt"></i></a>
+                                    <a aria-label="Visit the GitHub repo for Retro RPG Game" href="https://github.com/Fearhad/Word-Guess-Game"
+                                        target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light tooltipped">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- SW RPG-->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Star Wars RPG" src="assets/images/swrpg.PNG" class="activator"></div>
+                            <div class="card-content">
+                                <span class="card-title activator nightfall hoverline">Star Wars RPG
+                                    <i class="fas fa-chevron-circle-down nightfall"></i>
+                                </span>
+                                <p>Simple RPG Battle Game using jQuery</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title brown-text">Accomplishments
+                                <i class="fas fa-window-close"></i></span>
+                                <ul>
+                                    <li><strong>jQuery</strong></li>
+                                </ul>
+                                <div class="card-action">
+                                    <a aria-label="Visit Star Wars RPG website" href="https://fearhad.github.io/unit-4-game/"
+                                        target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light tooltipped">
+                                        <i class="fas fa-external-link-square-alt"></i>
+                                    </a>
+                                    <a aria-label="Visit the GitHub repo for RPG project" href="https://github.com/Fearhad/unit-4-game"
+                                        target="_blank" data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light tooltipped">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Middle Earth Trivia-->
+                    <div class="col s12 m6 l4">
+                        <div class="card medium">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img alt="Middle Earth Trivia Game" src="assets/images/metrivia.PNG" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator nightfall hoverline">Middle Earth Trivia Game
+                                    <i class="fas fa-chevron-circle-down nightfall"></i>
+                                </span>
+                                <p>Trivia Game which demonstrates understanding of javascript timers and timeouts</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title brown-text">Accomplishments
+                                        <i class="fas fa-window-close"></i></span>
+                                <ul>
+                                    <li>Javascript Timers and Timeouts</strong></li>
+                                    <li>Game Loops</li>
+                                </ul>
+                                <div class="card-action"><a aria-label="Visit Middle Earth Trivia Website" href="https://fearhad.github.io/TriviaGame/"
+                                        target="_blank" data-position="top" data-tooltip="View Online" class="btn-floating btn-large waves-effect waves-light tooltipped">
+                                        <i class="fas fa-external-link-square-alt"></i>
+                                    </a>
+                                    <a aria-label="Visit the GitHub repo for Middle Earth Trivia project"
+                                        href="https://github.com/Fearhad/TriviaGame" target="_blank"
+                                        data-position="top" data-tooltip="View Source" class="btn-floating btn-large waves-effect waves-light tooltipped">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section id="personalProjects" class="section scrollspy">
+            <h3 class="page-title burntAmberbg">Personal Projects</h3>
+            <div class="container">
+                <div class="row">
+                            </div>
+                        </div>
+        </section>
+        <section id="skills" class="section scrollspy">
+            <h3 class="page-title burntAmberbg">Skills</h3>
+            <div class="container">
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">HTML</h4>
+                        <div class="row text-center">
+                            <div class="col s4 m2"><img alt="" src="static/img/html5.png" class="responsive-img">HTML5</div>
+                            <div class="col s4 m2"><img alt="" src="static/img/react.png" class="responsive-img">JSX</div>
+                            <div class="col s4 m2"><img alt="" src="static/img/haml.png" class="responsive-img">Haml</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">CSS</h4>
+                        <div class="row text-center">
+                            <div class="col s4 m2"><img alt="" src="static/img/css3.png" class="responsive-img">CSS3</div>
+                            <div class="col s4 m2"><img alt="" src="static/img/sass.png" class="responsive-img">SASS</div>
+                            <div class="col s4 m2"><img alt="" src="static/img/bootstrap.png" class="responsive-img">Bootstrap</div>
+                            <div class="col s4 m2"><img alt="" src="static/img/materialize.png" class="responsive-img">Materialize</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">Javascript</h4>
+                        <div class="row text-center">
+                            <div class="col s4 m2"><img alt="" src="static/img/react.png" class="responsive-img">React</div>
+                            <div class="col s4 m2"><img alt="" src="static/img/javascript.png" class="responsive-img">Javascript</div>
+                            <div class="col s4 m2"><img alt="" src="static/img/jquery.png" class="responsive-img">jQuery</div>
+                            <div class="col s4 m2"><img alt="" src="static/img/firebase.png" class="responsive-img">Firebase</div>
+                            <div class="col s4 m2"><img alt="" src="static/img/nodejs.png" class="responsive-img">Node</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">Back-End</h4>
+                        <div class="row text-center">
+                            <div class="col s4 m2"><img alt="" src="static/img/mySql.png" class="responsive-img">mySQL</div>
+                            <div class="col s4 m2"><img alt="" src="static/img/mongodb.png" class="responsive-img">MongoDB</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">CMS</h4>
+                        <div class="row text-center">
+                            <div class="col s4 m2"><img alt="" src="static/img/wordpress.png" class="responsive-img">Wordpress</div>
+                            <div class="col s4 m2"><img alt="" src="static/img/tumblr.png" class="responsive-img">Tumblr</div>
+                            <div class="col s4 m2"><img alt="" src="static/img/squarespace.png" class="responsive-img">Squarespace</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <h4 class="brown-text light">Other</h4>
+                        <div class="row text-center">
+                            <div class="col s4 m2"><img alt="" src="static/img/github.png" class="responsive-img">Github</div>
+                            <div class="col s4 m2"><img alt="" src="static/img/heroku.png" class="responsive-img">Heroku</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="section scrollspy full-height">
+            <h3 class="page-title burntAmberbg">Contact</h3>
+            <div class="container">
+                <p><a aria-label="Email Allan" href="mailto:allan.hartigan@gmail.com" data-position="top"
+                        data-tooltip="Email Allan" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                            class="fa fa-envelope"></i><a alt="" href="mailto:allan.hartigan@gmail.com" class="hoverline">allan.hartigan@gmail.com</a></a></p>
+                <p><a aria-label="View Allan on GitHub" href="http://github.com/Fearhad" target="_blank"
+                        data-position="top" data-tooltip="View Allan on GitHub" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                            class="fa fa-github"></i><a alt="" href="http://github.com/Fearhad" class="hoverline">github.com/Fearhad</a></a></p>
+                <p><a aria-label="View Allan on LinkedIn" href="http://linkedin.com/in/allanhartigan" target="_blank"
+                        data-position="top" data-tooltip="View Allan on LinkedIn" class="btn-floating btn-large waves-effect waves-light brown tooltipped"><i
+                            class="fa fa-linkedin"></i><a alt="" href="http://linkedin.com/in/allanhartigan" class="hoverline">linkedin.com/in/allanhartigan</a></a></p>
+            </div>
+        </section>
+    </main>
+    <!-- jQuery-->
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <script src="assets/scripts/portfolio.js"></script>
