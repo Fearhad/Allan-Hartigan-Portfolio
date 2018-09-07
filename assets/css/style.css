@@ -503,74 +503,83 @@ nav ul li {
     }
 }
 
-.wrap {
-    margin-top: 0px;
-    perspective: 1000px;
-    perspective-origin: 10% 10%;
-}
-
-.cube {
-    margin: auto;
+#mainDiv {
+    width: 100px;
+    height: 100px;
+    perspective: 3000px;
+    font-size: 16px;
     margin-left: 50px;
-    position: relative;
-    height: 75px;
-    width: 75px;
-    transform-style: preserve-3d;
-    font-size: 14px;
+    margin-top: -20px;
 }
 
-.cube>div {
+#boxDiv {
+    width: 100px;   
+    transform-style: preserve-3d; 
+    animation: rotate 10s linear infinite;
+}
+
+#boxDiv div {
+    vertical-align: center;
     position: absolute;
-    box-sizing: border-box;
-    height: 100%;
-    width: 100%;
+    width: 100px;
+    height: 100px;
     opacity: 0.7;
-    background-color: #3C455C;
-    border: solid 1px #9AACB8;
-    color: #ffffff;
+    color: white;
 }
 
-.front {
-    transform: translateZ(-25px);
+#front {
+    transform: translateZ(100px);
+    background: orange;
+    background-position: center;
+    background-repeat: no-repeat;
+
 }
 
-.back {
-    transform: translateZ(-100px) rotateY(180deg);
+
+#back {
+    transform: rotateY(180deg) translateZ(0px);
+    background: green;
+    background-position: center;
+    background-repeat: no-repeat;    
 }
 
-.right {
-    transform: rotateY(-270deg) translateX(100px);
-    transform-origin: center right;
+#left {
+    transform: rotateY(-90deg) translateX(0px);
+    transform-origin: left;
+    background: lightblue;
+    background-position: center;
+    background-repeat: no-repeat;    
 }
 
-.left {
-    transform: rotateY(270deg) translateX(-100px);
-    transform-origin: center left;
+#right {
+    transform: rotateY(90deg) translateX(0px);
+    transform-origin: right;
+    background: lightsalmon;  
+    background-position: center;
+    background-repeat: no-repeat;    
 }
 
-.top {
-    transform: rotateX(-270deg) translateY(-100px);
-    transform-origin: top center;
+#top {
+    transform: rotateX(-90deg) translateY(-100px);
+    transform-origin: top;
+    background: black;
+    background-position: center;
+    background-repeat: no-repeat;    
 }
 
-.bottom {
-    transform: rotateX(270deg) translateY(100px);
-    transform-origin: bottom center;
+#bottom {
+    transform: rotateX(90deg) translateY(100px);
+    transform-origin: bottom;
+    background: #101010; 
+    background-position: center;
+    background-repeat: no-repeat;    
 }
 
 @keyframes rotate {
-    from {
-        transform: rotateX(0deg) rotateY(0deg);
-    }
-
-    to {
-        transform: rotateX(360deg) rotateY(360deg);
-    }
+    0% { transform: rotateY(0); }
+    100% { transform: rotateY(360deg); }
 }
 
-.cube {
-    animation: rotate 5s infinite linear;
-}
 
 .frostbg {
     background-color: #DDE2E3;
@@ -615,4 +624,8 @@ nav ul li {
 
 .bark {
     color: #60412B;
+}
+
+p.center-align {
+    margin-top: 30px;
 }
