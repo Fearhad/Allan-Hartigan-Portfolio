@@ -523,7 +523,7 @@ nav ul li {
     position: absolute;
     width: 100px;
     height: 100px;
-    opacity: 0.8;
+    opacity: 0.9;
     color: white;
 }
 
@@ -546,7 +546,7 @@ nav ul li {
 #left {
     transform: rotateY(-90deg) translateX(0px);
     transform-origin: left;
-    background: lightblue;
+    background: white;
     background-position: center;
     background-repeat: no-repeat;    
 }
@@ -554,7 +554,7 @@ nav ul li {
 #right {
     transform: rotateY(90deg) translateX(0px);
     transform-origin: right;
-    background: lightsalmon;  
+    background: white;  
     background-position: center;
     background-repeat: no-repeat;    
 }
